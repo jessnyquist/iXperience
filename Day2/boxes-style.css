@@ -1,0 +1,45 @@
+* {
+
+box­sizing: border­box;
+
+transition: .5s all ease;
+
+}
+
+.bigBox {
+
+background: none;
+
+width: 100%;
+
+}
+
+.bigBox > div {
+
+margin: 2%;
+
+background: cornflowerblue;
+
+border: green;
+border-radius: 5px;
+
+padding: 5%;
+
+display: inline­block;
+
+width: 40%;
+
+}
+#bigBox > div:first-child {
+background: orange;
+}
+#bigBox div div {
+	color: red;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+input[type=checkbox]:checked {
+	display: inline-block;
+}
