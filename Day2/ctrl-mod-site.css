@@ -1,0 +1,48 @@
+ul {
+	list-style: none;
+}
+
+ul li {
+	float: left;
+	text-align: center;
+}
+
+.top-bar li li {
+	width: auto;
+	padding: 5px;
+}
+
+.top-bar li{
+	width:33.333%;
+}
+
+.catergories li {
+	padding: 5px;
+}
+
+.section {
+	margin: 0px 10%;
+}
+
+.section ul{
+	width:auto;
+}
+
+.boxes{
+	width:50%;
+	float:left;
+}
+.smallBox {
+	float:left;
+	width: 50%;
+}
+
+.BigBox{
+	width: 50%;
+	float:left;
+	background-color: grey;
+}
+
+h5{
+	text-align: center;
+}
