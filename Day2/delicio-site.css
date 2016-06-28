@@ -1,0 +1,67 @@
+nav {
+	
+	height: 100px;
+
+}
+.logo {
+	width: 25px;
+	display: inline-block;
+	font-family: 'Playfair Display', Georgia, serif;
+	font-style: italic;
+	font-weight:900;
+	letter-spacing: -1px;
+	line-height: 1;
+}
+.toolbar ul{
+	display: inline-block;
+	text-align: right;
+	width: 800px;
+}
+ul {
+list-style: none;
+}
+.toolbar li {
+	float: left;
+padding: 10px;
+}
+.section {
+	text-align:center;
+	margin: 40px 0px;
+}
+h2 {
+	font-family: 'Playfair Display', Georgia, serif;
+}
+p {
+	margin: 10px 10%;
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.btn a{
+	padding:3px;
+	background: orange;
+	font-family: 'Lato', sans-serif;
+	color: white;
+	margin-top: 10px;
+}
+
+.foot li{
+	width: 25%;
+	float: left;
+	background: black;
+}
+.foot li h3 {
+	    font-family: 'Lato', sans-serif;
+	    color: #fefefe;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.foot li h4{
+	color: #888888;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.6;
+	font-family: 'Lato', sans-serif;
+}
