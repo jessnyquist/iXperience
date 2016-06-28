@@ -1,27 +1,44 @@
 #title{
 font-family:'Playfair Display', Georgia, serif;
-font style: italic;
-font weight:900;
+font-style: italic;
+font-weight:900;
 letter-spacing:-1px;
-line-height:1;
+font-size: 40px;
+color: black;
+float: left;
+display: inline-block;
+}
+#header {
+	position: fixed;
+	padding: 10px;
+	display: block;
+	background: white;
+}
+#mainbod{
+	padding: 200px;
+	display: block;
+	background: url(https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg);
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    float: right;
 }
 
 li {
-    float: left;
+    float: right;
+
 }
 
 li a {
-    display: block;
-    color: white;
+    display: inline-block;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family:'Playfair Dislay',Georgia,serif;
 }
 
 li a:hover {
@@ -29,12 +46,21 @@ li a:hover {
 
 }
 #main {
-	font-family: 'Playfair Display',serif;
+	font-family: 'Playfair Display',Georgia, serif;
 	font-size:40px;
 	text-align: center;
 }
 #descr {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair Display', Georgia, serif;
 	text-align: center;
 	font-size: 15px;
+}
+table {
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+}
+footer {
+	display: block;
+	margin: auto;
 }
