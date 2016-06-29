@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 800px;
+	margin: 0px auto;
+	/*text-align: center;*/
+	border: 2px solid red;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.topbar .container div{
+	display: inline-block;
+}
+
+.logo {
+	margin-left: 0px;
+}
+
+#logo-name {
+	font-size: 30px;
+	font-color: black;
+	font-style: italic;
+	font-weight: bold;
+}
+.section-bar {
+	text-align: center;
+	width: 400px;
+	margin: 0px auto;
+}
+ .section-bar ul{
+ 	width: 100%;
+ 	margin: 0px auto;
+ }
+.section-bar li {
+	font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.14em;
+    padding: 2px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.social-media-btns {
+	/*text-align: right;*/
+	margin-right:0px;
+}
+
+.info-text {
+	max-width:600px;
+	margin:0px auto;
+}
+
+p {
+	font-size: 30px;
+    line-height: 30px;
+    font-family: "freight-display-pro",serif;
+    letter-spacing: 0.03em;
+    font-weight: 100;
+    text-align: center;
+}
+ul {
+	list-style-type: none;
+}
+
+li {
+	float:left;
+}
+
+.pic {
+	border: solid 5px orange;
+	padding: 10px;
+	float:left;
+}
+
+.main {
+	width:100%;
+}
+
+.half {
+	width: 50%;
+}
+
+.twothird {
+	width: 66.666%;
+}
+
+.onethird {
+	width: 33.333%;
+}
+
+@media(max-width:800px) {
+	.container {
+		border: solid 4px black;
+	}
+	.topbar div {
+		display:block;
+	}
+	.logo {
+		text-align: center
+	}
+	.topbar .container .section-bar {
+		width: 100%;
+		margin: auto;
+	}
+	.topbar .container .logo {
+		width: 100%;
+		margin: auto;
+	}
+	.topbar .container .social-media-btns {
+		width: 100%;
+		margin: auto;
+	}
+	.social-media-btns a {
+		text-align: center;
+	}
+	ul {
+		width: 100%
+		margin:0px auto;
+	}
+	ul li {
+		float: none;
+		width:100%;
+		margin: 0px auto;
+	}
+	.pic {
+		float: none;
+		width: 100%;
+		margin: 0px auto;
+	}
+	p{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.info-text {
+		max-width: 500px;
+	}
+}
+
+@media(max-width:400px) {
+	.container {
+		border: solid 4px blue;
+	}
+
+	.pic {
+		max-width: 300px;
+		width: 100%;
+		text-align: center;
+		margin:auto;
+	}
+	
+}
