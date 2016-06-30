@@ -1,0 +1,52 @@
+.main-image {
+	height: 600px;
+	border: solid 2px blue;
+	background-image: url("cape-town-scenery.jpeg")
+}
+.big-mission{
+	text-align: center;
+	margin-top: 30%;
+	color:white;
+}
+.mission-desc{
+	text-align: center;
+	color: white;
+}
+.photo-1 {
+	height: 40px;
+	border: solid 3px blue;
+}
+.test{
+	border: solid 1px black;
+	height: 100px;
+	width: 100px;
+}
+.tester{
+	border: solid 1px red;
+	height: 100px;
+	width: 100px;
+}
+.meet-team{
+	text-align: center;
+}
+.circle{
+	border: 2px solid black;
+	background-color: orange;
+	height:30px;
+	width:30px;
+	border-radius: 50%;
+}
+#team-pics{
+	list-style: none;
+}
+#team-pics li{
+	float:left;
+	width: 33%;
+	margin: 10px auto;
+}
+
+@media(max-width:798px){
+	#team-pics li{
+		width:50%;
+	}
+}
