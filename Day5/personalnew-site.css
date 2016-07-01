@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Century Gothic',sans-serif; 
+}
+a{
+	text-decoration: none;
+}
+.page{
+	width:100%;
+	height:300px;
+	position:relative;
+}
+.nav-bar{
+	padding-top: 10px;
+	height:50px;
+}
+h1{
+	text-transform: uppercase;
+	font-family: 'Century Gothic',sans-serif; 
+	font-size: 30px; 
+	font-weight: normal; 
+	line-height: 40px; 
+	letter-spacing: 1.3px;
+}
+.main{
+	background-image: url(cape-town-scenery.jpeg);
+	background-position: top center;
+	height:500px;
+}
+
+.clicks{
+
+}
+ul{
+	list-style: none;
+}
+
+.clicks li{
+	float: left;
+	width:25%;
+	padding-left:15px;
+		padding-right:15px;
+		padding-top:20px;
+	text-transform: uppercase;
+	color: black;
+	height: 100%;
+	letter-spacing: 1.8px;
+}
+
+li{
+	float:left;
+}
+li a{
+	color: black;
+}
+.info-text{
+	position:absolute;
+	width:300px;
+	right:40px;
+	top:180px;
+}
+.info-text h1,.info-text p {
+	text-align:right;
+}
+.top-btn {
+position:absolute;
+right:10px;
+top:10px;
+text-align: center;
+}
+
+.top-btn a{
+color:gray;
+}
+
+.top-btn p{
+	opacity:0;
+	text-transform: uppercase;
+	font-size: 10px;
+	color:grey;
+	text-align: center;
+
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	padding:10px;
+	font-weight: 100;
+	letter-spacing: 1.5px;
+}
+.prof{
+	background-color: hsla(208, 30%, 68%, 0.31);
+}
+.contact{
+	background-color: black;
+}
+#contact h2 {
+	color: gray;
+}
+.clicks li:hover{
+	border-bottom: 1px solid red;
+	transition: .3s;
+}
+.contact .top-btn p{
+	color:gray;
+	font-size: 10px
+}
+
+#media{
+	padding-right:40px;
+}
+
+#media li:hover{
+	color:red
+
+}
+
+.top-btn:hover  p{
+	opacity: 1;
+	transition: .4s;
+}
+
+.top-btn:hover a{
+	transition: .3s;
+	color:red;
+}
+
+.contact p{
+	color:white;
+	text-align:center;
+	font-size: 12px;
+}
+
+#media li{
+	color:white;
+	width:33%;
+	text-align:center;
+}
+
+#media{
+	width:200px;
+	margin:0px auto;
+}
+@media(max-width:700px){
+	.clicks li{
+		width:50%;
+	}
+}
+
+@media(max-width:500px){
+	.info-text h1,.info-text p {
+	text-align:center;
+}
+.info-text{
+	width:100%;
+	right:0px;
+}
+}
