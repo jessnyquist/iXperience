@@ -33,6 +33,7 @@ h1{
 }
 ul{
 	list-style: none;
+	padding-right:40px;
 }
 
 .clicks li{
@@ -49,6 +50,7 @@ ul{
 
 li{
 	float:left;
+	text-align: center;
 }
 li a{
 	color: black;
@@ -97,7 +99,7 @@ h2{
 #contact h2 {
 	color: gray;
 }
-.clicks li:hover{
+.clicks li:hover a{
 	border-bottom: 1px solid red;
 	transition: .3s;
 }
@@ -106,9 +108,6 @@ h2{
 	font-size: 10px
 }
 
-#media{
-	padding-right:40px;
-}
 
 #media li:hover{
 	color:red
