@@ -21,11 +21,18 @@ h1{
 	font-weight: normal; 
 	line-height: 40px; 
 	letter-spacing: 1.3px;
+	color:white;
+}
+
+#dash{
+	color: grey;
+	text-align: center;
+	margin:0px;
 }
 .main{
-	background-image: url(cape-town-scenery.jpeg);
-	background-position: top center;
-	height:500px;
+	background-image: url(IMG_0001.jpg);
+	background-position: 70% 45%;
+	height:700px;
 }
 
 .clicks{
@@ -63,9 +70,12 @@ li a{
 }
 .info-text h1,.info-text p {
 	text-align:right;
+	color: white;
 }
+
+
 .top-btn {
-position:absolute;
+	position: absolute;
 right:10px;
 top:10px;
 text-align: center;
@@ -89,6 +99,7 @@ h2{
 	padding:10px;
 	font-weight: 100;
 	letter-spacing: 1.5px;
+	margin-bottom: 0px;
 }
 .prof{
 	background-color: hsla(208, 30%, 68%, 0.31);
@@ -153,5 +164,8 @@ h2{
 .info-text{
 	width:100%;
 	right:0px;
+}
+.main{
+	background-position: 20% 50%;
 }
 }
