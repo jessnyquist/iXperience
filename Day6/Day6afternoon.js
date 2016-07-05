@@ -26,7 +26,7 @@ return 10;
 // e.g. [1,2,3,6,7,8] and [3,6,7,8,1,2] are rotated versions of each other
 function areRotatedVersions(array1, array2) {
 	for(var i = 0; i < array1.length; i++){
-		for(var j = 0; j<a rray1.length; j++){
+		for(var j = 0; j< array1.length; j++){
 			if(array1[i]===array2[j]){
 			}
 		}
@@ -37,6 +37,18 @@ function areRotatedVersions(array1, array2) {
 // Return a string of the first n prime numbers, separated by commas
 // e.g. "1,2,3,4"
 function nPrimeNums(n) {
+	var primes= [];
+	for(var i =2; primes.length < n; i++){
+		var hasDivisor = false;
+			for(var j = 2; j< i; j++){
+				if(i%j === 0){
+					hasDivisor = true;
+				}
+			}
+		if(!hasDivisor){
+			primes.push(i);
+		}
+	}
 
 }
 
