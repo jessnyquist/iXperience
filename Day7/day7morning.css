@@ -15,13 +15,14 @@
 .lightbox {
     /* this should not be on the screen to start*/
     opacity: 0;
+    transition: .5s;
 
 }
 
 .isVisible {
     /* this does exactly what it sounds like it does */
     opacity: 1;
-
+    transition: .5s;
 }
 
 .isRed {
