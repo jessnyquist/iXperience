@@ -88,11 +88,22 @@ function longestPalindrome(sentence) {
 }
 
 function areAnagrams (sentence1, sentence2) {
-	// var firstSentence = sentence1.replace(/\s+/g,'');
-	// var secondSentence = sentence2.replace(/\s+/g,'');
-	sentence1.sort();
-	sentence2.sort();
-	if(sentence1 === sentence2){
+
+	var firstSentence = [];
+	var secondSentence = [];
+	for(var i = 0; i < sentence1.length; i++){
+		if(sentence1[i] !== " "){
+			firstSentence.push(sentence1[i]);
+		}
+	}
+	for(var i = 0; i < sentence2.length; i++){
+		if(sentence2[i] !== " "){
+			secondSentence.push(sentence2[i]);
+		}
+	}
+	firstSentence.sort();
+	secondSentence.sort();
+	if(firstSentence === secondSentence){
 		return 'yes';
 	}
 	else{
