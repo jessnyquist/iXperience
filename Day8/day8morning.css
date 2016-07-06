@@ -1,0 +1,25 @@
+.isRed {
+	color: red;
+}
+#screen{
+	position: fixed;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.5);
+}
+
+#image{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.lightbox{
+	position:fixed;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right: 0;
+}
