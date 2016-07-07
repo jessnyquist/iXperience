@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<header>
+</header>
+<body ng-app="groceryApp">
+	<div ng-controller="GroceryCtrl">
+		<h1>Grocery List</h1>
+		Grocery item: <input ng-model="itemname">
+		Quantity: <input ng-model="amount">
+		<button ng-click="addItem()">Add to List</button>
+		Search : <input ng-model="searchText">
+		
+		<ol>
+			<li ng-repeat="grocery in grocerylist | filter: searchText">
+			{{grocery.item}} - {{grocery.quantity}} <button ng-click="plusOne(grocery)">+</button><button ng-click="minusOne(grocery)">-</button>
+			</li>
+		</ol>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script src="grocery.js"></script>
+</body>
+</html>
