@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<header>
+</header>
+<body ng-app='nytimesApp'>
+	<div ng-controller='nytimesCtrl'>
+	Search NY Times: <input ng-model="searchTerm"><span><button ng-click="searchNow()">Search!</button></span>
+	<ul>
+		<li ng-repeat="a in articles">
+		<a href="{{a.web-url}}">{{a.headline.main}}</a>
+		</li>
+	</ul>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script src="nysearch.js"></script>
+</body>
+</html>
