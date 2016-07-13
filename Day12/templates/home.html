@@ -1,11 +1,12 @@
-<div class="error" ng-show="showError">I'm sorry, be more positive!!</div>
+<div class="error" ng-show="errorMessage">{{errorMessage}}</div>
+<div ng-class="{'isDisplayed': isSearching}">
 <input ng-model="newPropsValue">
 <select ng-options="b.id as b.first_name + b.last_name for b in brus track by b.id" ng-model="selectedBru"></select>
-<button ng-click="sendProps()">Send Props!</button>
-
-<button ng-click="reloadFeed()">Refresh!</button>
+<span><div class="btn" ng-click="sendProps()">Send Props!</div></span>
+</div>
 <div class="feed"> 
 <h3>Feed:</h3>
+<div class="btn" id="ref" ng-click="reloadFeed()">Refresh!</div>
 <ul>
 	<li ng-repeat="prop in propsArray">
 	<p class="proptext"><p id="name">{{prop.receiver.first_name}} {{prop.receiver.last_name}}:</p> "{{prop.text}}"</p>

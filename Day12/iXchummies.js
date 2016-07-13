@@ -14,8 +14,9 @@ app.config(function($routeProvider) {
 });
 
 app.controller('FeedCtrl', function($scope, $http){
+	$scope.isSearching = false;
 	$scope.propsArray=[];
-	$scope.showError= false;
+	$scope.errorMessage= "";
 	$http({
 		url: 'http://ixchommies.herokuapp.com/props',
 		method: 'GET',
@@ -37,47 +38,29 @@ app.controller('FeedCtrl', function($scope, $http){
 	});
 
 	$scope.sendProps = function(){
+		$scope.isSearching = true;
+		$scope.errorMessage= "";
 		console.log($scope.selectedBru);
 		console.log($scope.newPropsValue);
 		$http({
-			method: "GET",
-			url: "https://twinword-sentiment-analysis.p.mashape.com/analyze/",
+			url: 'http://ixchommies.herokuapp.com/props',
+			method: 'POST',
 			params: {
-				'text': $scope.newPropsValue
+				'token': "9d3600ed05dd4a79a3238bc5dd79e06f",
 			},
-			headers: {
-				'X-Mashape-Key': "s0DsGDMLUvmshYolWXRxJU0MhHyEp1UFY9fjsnArykmyUgf7KW",
+
+			data: {
+				'for': $scope.selectedBru,
+				'props': $scope.newPropsValue
 			}
 
 		}).then(function(response){
+			$scope.reloadFeed();
+		}).catch(function(response){
 			console.log(response);
-			$scope.isPos = response.data.type;
-			console.log($scope.isPos);
-
-
-
-			if($scope.isPos === "positive"){
-				console.log("true");
-				$scope.showError=false;
-				$http({
-					url: 'http://ixchommies.herokuapp.com/props',
-					method: 'POST',
-					params: {
-						'token': "9d3600ed05dd4a79a3238bc5dd79e06f",
-					},
-
-					data: {
-						'for': $scope.selectedBru,
-						'props': $scope.newPropsValue
-					}
-
-				}).then(function(response){
-					$scope.reloadFeed();
-				});
-			}
-			else{
-				$scope.showError=true;
-			}
+			$scope.errorMessage = response.data.message;
+		}).finally(function(response){
+			$scope.isSearching = false;
 		});
 	}
 

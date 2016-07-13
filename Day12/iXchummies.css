@@ -1,5 +1,6 @@
 *{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	box-sizing: border-box;
 }
 .header {
 	background-color: rgba(77, 63, 181, 0.82);
@@ -28,7 +29,10 @@ li{
 	background-color: rgb(226, 216, 184);
 	height:80px;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 40px;
+	color: red;
+	font-style: italic;
+	transition: .3s;
 }
 #name{
 	font-weight: bold;
@@ -39,7 +43,18 @@ a {
 	margin-right: 30px;
 	margin-top: 20px;
 	text-decoration: none;
-
+	transition: .3s;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:active{
+	color:black;
+}
+.isDisplayed{
+	opacity: .4;
+	pointer-events: none;
+	transition: .3s;
 }
 .positivity{
 	text-transform: uppercase;
@@ -47,8 +62,20 @@ a {
 	font-style: italic;
 	font-size: 10px;
 }
-button{
-	height: 50px;
+.btn{
+	padding:20px;
 	border-radius: 20px;
-	background-color: 
+	background-color: rgba(77, 63, 181, 0.6);
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
+.btn:hover {
+	background-color: white;
+	color: rgba(77, 63, 181, 0.82);
+	border: solid rgba(0,0,0,.3) 2px;
+}
+#ref:active {
+	background-color: black;
 }
