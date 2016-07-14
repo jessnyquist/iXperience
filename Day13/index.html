@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="tension.css">
+	<title>TensionApp</title>
+</header>
+<body ng-app='tensionApp'>
+	<h1>Tension</h1>
+	<div ng-view>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+  	apiKey: "AIzaSyC16ZDviAby1ypjYJnce2Rr3MftXeFJAtU",
+  	authDomain: "tension-21fba.firebaseapp.com",
+  	databaseURL: "https://tension-21fba.firebaseio.com",
+  	storageBucket: "",
+  };
+  firebase.initializeApp(config);
+	</script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+	<script src="tension.js"></script>
+</body>
+</html>
